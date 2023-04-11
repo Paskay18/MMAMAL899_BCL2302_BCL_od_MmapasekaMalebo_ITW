@@ -1,0 +1,710 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Layout of page using flex*/
+.Layout{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main Section*/
+
+.MainSection{
+    width: cover;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:0px
+    
+}
+.MainSection div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+    
+    
+}
+
+.Navigation_Bar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.information_section{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+ .information_section a{
+    color: gray;
+    text-decoration: none;
+ }
+ 
+/*header elements*/
+
+h1{
+    font-size: 35px;
+}
+
+header{   
+
+    display: flex;
+
+}
+
+.header_information{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Header{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-image: url("/Images/hero\ medium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-bottom: 2px solid ;
+    width: cover;
+    height: 60vh;
+    padding-top: 5px;
+    
+}
+
+img{
+    max-height: 300px;
+    border-radius:100% ;
+    border-style: solid;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 300px;
+
+
+}
+
+#Header_Links{
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-items: space-between;
+
+ width: cover;
+}
+
+
+
+#linkcolor{
+    margin-top: 15px;
+    height: 5px;
+    padding: 0.5px;
+    font-size: 15px;
+    color: rgb(110, 102, 102);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+#SoftwareEngineer{
+    font-size: 25px;
+}
+
+#AboutMe_Paragraph{
+    font-size: 20px;
+}
+#AboutMe{
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/*Navigation Bar*/
+
+#Menu{ 
+    color: white;
+
+}
+.Navigation_Bar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:black;
+    font-size: 18px;
+   
+
+}
+
+.Navigation_Bar a{
+    text-decoration: 0px;
+    color: white;
+    
+}
+
+.Navigation_Bar_ul{
+    padding-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    
+}
+
+.Navigation_Bar_ul_li{
+    padding-top: 30px;
+    text-decoration: none;
+    display: inline-block;
+
+    
+}
+
+.information_section{
+    padding: 215px;
+    background-color: rgba(241, 24, 241, 0.57)
+    (241, 157, 241, 0.811);
+    font-size: 20px;
+    
+}
+
+
+/*Footer Section*/
+
+
+#Footer_Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 300px;
+    color: white;
+    background-color: black;
+    
+    }
+
+    .Contact a{
+        color: gray;
+    }
+    #ContactDetails{
+        margin-top: -100px;
+    }
+
+
+
+    /*form*/
+    .form_layout{
+   
+    
+    width: 300px;
+    height: 100%; ;
+    background-color: black;
+    color: aliceblue;
+   
+
+}
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+    padding-top:20px;
+    font-size: 15px;
+    
+}
+
+label{
+    width: 230px;
+    height: 20px;
+    font-size: 15px;
+}
+
+input{
+    width: 230px;
+    height: 20px;
+}
+
+button{
+    background-color: gray;
+    width: 70px;
+    height: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: bold;
+    font-size:10px ;
+}
+
+textarea{
+    width: 230px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+
+/*Responsive screen for different device sizes*/
+
+/*Mobile phone */
+
+@media only screen and (min-width:300px) and (max-width: 600px){
+    
+    /*header elements*/
+
+    h1{
+        font-size: 25px;
+    }
+    
+    header{   
+    
+        display: flex;
+    
+    }
+    
+    .header_information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        margin-left: -8px;
+    
+    }
+    
+    
+    #Header{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        background-image: url("/Images/hero\ medium.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        border-bottom: 2px solid ;
+        width: cover;
+        height: 45vh;
+        padding-top: 5px;
+        
+    }
+    
+    img{
+        max-height: 120px;
+        border-radius:100% ;
+        border-style: solid;
+        margin-top:40px;
+        margin-right: 10px;
+        margin-left: 20px;
+        width: 120px;
+        
+    
+    
+    }
+
+
+
+
+    
+    #Header_Links{
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: space-between;
+    
+     width: cover;
+    }
+    
+    h4{
+        font-size: 10px;
+    }
+    
+    #linkcolor{
+        display: flex;
+        margin-top: -30px;
+        height: 2px;
+        font-size: 10px;
+        color: rgb(110, 102, 102);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 10;
+        padding: 0.5px;
+        
+    }
+    #SoftwareEngineer{
+        font-size: 14px;
+    }
+    
+    #AboutMe_Paragraph{
+        font-size: 14px;
+    }
+    #AboutMe{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+
+/*Navigation*/
+#Menu{ 
+    color: white;
+    font-size: 18px;
+
+}
+
+.Navigation_Bar{
+    
+    font-size: 18px;
+    width: 100px;
+} 
+
+.Navigation_Bar_ul{
+    padding-top: 12px;
+    padding-left: 6px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+    
+}
+
+.Navigation_Bar_ul_li{
+    font-size: 18px;
+}
+
+
+
+.information_section{
+    padding: 20px;
+    background-color: rgba(241, 24, 241, 0.57)
+    (241, 157, 241, 0.811);
+    font-size: 15px;
+    width: cover;
+    
+
+    
+}
+
+
+/*Footer*/
+#Footer_Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 300px;
+    color: white;
+    background-color: black;
+    width: cover;
+    
+    }
+     
+    .Contact{
+        margin-left: -100px;
+        font-size: smaller;
+    }
+    .Contact a{
+        color: gray;
+    }
+
+   
+    /*form*/
+    .form_layout{
+   
+    
+    width: 100px;
+    height: 100%; ;
+    background-color: black;
+    color: aliceblue;
+   
+
+}
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+    padding-top:20px;
+    font-size: smaller;
+    
+}
+
+label{
+    width: 100px;
+    height: 15px;
+    font-size: 12px;
+}
+
+input{
+    width: 100px;
+    height: 10px;
+}
+
+button{
+    background-color: gray;
+    width: 45px;
+    height: 20px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 9px;
+    margin-top: -20px;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: bold;
+    font-size:7px ;
+}
+
+textarea{
+    width: 100px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+}
+
+
+
+/*Tablet*/
+@media only screen and (min-width:601px) and (max-width: 1024px){
+    /*header elements*/
+
+    h1{
+        font-size: 28px;
+    }
+   
+    
+    }
+    
+    .header_information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        margin-left: 2px;
+    
+    }
+    
+    
+    #Header{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        background-image: url("/Images/hero\ medium.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        border-bottom: 2px solid ;
+        width: cover;
+        height: 50vh;
+        padding-top: 8px;
+        
+    }
+    
+    img{
+        max-height: 200px;
+        border-radius:100% ;
+        border-style: solid;
+        margin-top:40px;
+        margin-right: 10px;
+        margin-left: 20px;
+        width: 200px;
+        
+    
+    
+    }
+
+
+
+
+    
+    #Header_Links{
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: space-between;
+    
+     width: cover;
+    }
+    
+    h4{
+        font-size: 12px;
+    }
+    
+    #linkcolor{
+        display: flex;
+        margin-top: -30px;
+        height: 2px;
+        font-size: 10px;
+        color: rgb(110, 102, 102);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 10px;
+        padding: 0.5px;
+        
+    }
+    #SoftwareEngineer{
+        font-size: 23px;
+    }
+    
+    #AboutMe_Paragraph{
+        font-size: 16px;
+    }
+    #AboutMe{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+
+/*Navigation*/
+#Menu{ 
+    color: white;
+
+}
+.Navigation_Bar{
+    
+    font-size: 18px;
+    width: 150px;
+
+   
+
+}
+.Navigation_Bar_ul{
+    padding-top: 15px;
+    padding-left: 17px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+    
+}
+
+
+
+.information_section{
+    padding: 20px;
+    background-color: rgba(241, 24, 241, 0.57)
+    (241, 157, 241, 0.811);
+    font-size: 18px;
+    width: cover;
+    
+
+    
+}
+
+
+/*Footer*/
+#Footer_Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 300px;
+    color: white;
+    background-color: black;
+    width: cover;
+    
+    }
+     
+    .Contact{
+        margin-left: -150px;
+        font-size: smaller;
+    }
+    .Contact a{
+        color: gray;
+    }
+    
+    
+
+
+
+    /*form*/
+    .form_layout{
+   
+    
+    width: 100px;
+    height: 100%; ;
+    background-color: black;
+    color: aliceblue;
+   
+
+}
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+    padding-top:20px;
+    font-size: smaller;
+    
+}
+
+label{
+    width: 100px;
+    height: 15px;
+    font-size: 12px;
+}
+
+input{
+    width: 100px;
+    height: 10px;
+}
+
+button{
+    background-color: gray;
+    width: 45px;
+    height: 20px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 9px;
+    margin-top: -20px;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: bold;
+    font-size:7px ;
+}
+
+textarea{
+    width: 100px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+}
