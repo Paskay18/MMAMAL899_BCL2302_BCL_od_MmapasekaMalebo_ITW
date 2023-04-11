@@ -270,12 +270,17 @@ textarea{
     /*header elements*/
 
     h1{
+        padding-top: 20px;
         font-size: 25px;
     }
     
     header{   
     
         display: flex;
+        margin-top: 30px;
+        width: cover;
+        margin-bottom: 25px;
+
     
     }
     
@@ -303,17 +308,18 @@ textarea{
         width: cover;
         height: 45vh;
         padding-top: 5px;
-        
+        margin-top: 0;
     }
     
     img{
         max-height: 120px;
         border-radius:100% ;
         border-style: solid;
-        margin-top:40px;
         margin-right: 10px;
         margin-left: 20px;
         width: 120px;
+    
+        
         
     
     
@@ -349,19 +355,24 @@ textarea{
         
     }
     #SoftwareEngineer{
-        font-size: 14px;
+        font-size: 20px;
     }
     
     #AboutMe_Paragraph{
         font-size: 14px;
     }
     #AboutMe{
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 15px;
     }
     
 
 /*Navigation*/
+
+
+.MainSection{
+    min-height: 60vh;
+}
 #Menu{ 
     color: white;
     font-size: 18px;
@@ -370,12 +381,12 @@ textarea{
 
 .Navigation_Bar{
     
-    font-size: 18px;
-    width: 100px;
+    font-size: 16px;
+    width: 200px;
 } 
 
 .Navigation_Bar_ul{
-    padding-top: 12px;
+    padding-top: 16px;
     padding-left: 6px;
     margin: 0px;
     display: flex;
@@ -388,22 +399,20 @@ textarea{
 }
 
 .Navigation_Bar_ul_li{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
 
 .information_section{
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(241, 24, 241, 0.57)
     (241, 157, 241, 0.811);
-    font-size: 15px;
-    width: cover;
-    
-
+    font-size: 12.5px;
+    min-height: 60vh;
+    margin-bottom: 10px;
     
 }
-
 
 /*Footer*/
 #Footer_Section{
@@ -491,15 +500,15 @@ textarea{
 
 
 /*Tablet*/
-@media only screen and (min-width:601px) and (max-width: 1024px){
+@media only screen and (min-width:601px) and (max-width: 1024px)
+{
     /*header elements*/
 
     h1{
-        font-size: 28px;
+        font-size: 30px;
     }
    
-    
-    }
+
     
     .header_information{
         display: flex;
@@ -555,7 +564,7 @@ textarea{
     }
     
     h4{
-        font-size: 12px;
+        font-size: 15px;
     }
     
     #linkcolor{
@@ -587,11 +596,12 @@ textarea{
 #Menu{ 
     color: white;
 
+
 }
 .Navigation_Bar{
     
-    font-size: 18px;
-    width: 150px;
+    font-size: 19px;
+    width: 200px;
 
    
 
@@ -612,10 +622,11 @@ textarea{
 
 
 .information_section{
+    min-height: 20px;
     padding: 20px;
     background-color: rgba(241, 24, 241, 0.57)
     (241, 157, 241, 0.811);
-    font-size: 18px;
+    font-size: 15px;
     width: cover;
     
 
